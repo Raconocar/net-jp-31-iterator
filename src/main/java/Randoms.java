@@ -3,14 +3,14 @@ import java.util.Iterator;
 import java.util.function.Consumer;
 
 public class Randoms implements Iterable<Integer> {
-    protected Random random;
-
+    myRandomeImpl myRand;
 
     private List<Integer> randomes;
 
     public Randoms(int min, int max) {
-        this.randomes= new ArrayList<>();
-        this.randomes.add((random.nextInt(max - min)) + min);
+        this.randomes = new ArrayList<>();
+        this.myRand = new myRandomeImpl(min, max);
+
     }
 
     @Override
@@ -27,7 +27,7 @@ public class Randoms implements Iterable<Integer> {
             @Override
             public Integer next() {
                 next++;
-                int actual = randomes.get(next);
+                int actual = myRand.getRand();
                 return actual;
             }
         };
