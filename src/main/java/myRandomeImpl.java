@@ -13,9 +13,6 @@ public class myRandomeImpl {
 
     public static int getRand() {
          int ranInt = random.nextInt(max - min) + min+1;
-        System.out.println(ranInt);
-
         return ranInt;
     }
-
 }
