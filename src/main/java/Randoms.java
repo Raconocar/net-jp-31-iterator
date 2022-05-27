@@ -1,13 +1,10 @@
-import java.util.*;
 import java.util.Iterator;
 
 public class Randoms implements Iterable<Integer> {
-    myRandomeImpl myRand;
-    private List<Integer> randomes;
+    MyRandomeImpl myRand;
 
     public Randoms(int min, int max) {
-        this.randomes = new ArrayList<>();
-        this.myRand = new myRandomeImpl(min, max);
+        this.myRand = new MyRandomeImpl(min, max);
     }
 
     @Override

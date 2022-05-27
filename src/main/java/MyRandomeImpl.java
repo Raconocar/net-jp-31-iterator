@@ -1,11 +1,11 @@
 import java.util.Random;
 
-public class myRandomeImpl {
+public class MyRandomeImpl {
     protected static Random random;
     protected static int min;
     protected static int max;
 
-    public myRandomeImpl(int min, int max) {
+    public MyRandomeImpl(int min, int max) {
         this.max = max;
         this.min = min;
         this.random = new Random();
